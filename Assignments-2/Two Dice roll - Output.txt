@@ -1,0 +1,1301 @@
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :4
+Total count :20
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :2
+Total count :10
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :3
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :3
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :8
+Total count :41
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :4
+Total count :19
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :2
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :6
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :3
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :24
+Total count :150
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :3
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :12
+Total count :76
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :2
+Total count :9
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :5
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :3
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :10
+Total count :54
+Dice value of D1 :3
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :3
+Total count :13
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :4
+Total count :18
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :1
+Total count :0
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :4
+Total count :17
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :1
+Total count :0
+Dice value of D1 :3
+Dice value of D2 :3
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :2
+Total count :6
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :5
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :10
+Total count :74
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :1
+Dice value of D2 :2
+Dice value of D1 :4
+Dice value of D2 :5
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :8
+Total count :43
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :2
+Total count :4
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :4
+Total count :33
+Dice value of D1 :1
+Dice value of D2 :2
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :5
+Total count :29
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :1
+Total count :0
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :5
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :1
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :2
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :9
+Total count :34
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :2
+Total count :9
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :4
+Dice value of D2 :5
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :3
+Total count :13
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :5
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :5
+Total count :24
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :5
+Dice value of D2 :6
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :5
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :10
+Total count :76
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :5
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :6
+Total count :37
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :3
+Dice value of D2 :2
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :5
+Total count :26
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :6
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :10
+Total count :73
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :3
+Total count :17
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :7
+Total count :42
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :5
+Total count :34
+Dice value of D1 :6
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :4
+Total count :27
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :3
+Total count :12
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :2
+Total count :6
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :2
+Total count :10
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :2
+Dice value of D1 :6
+Dice value of D2 :5
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :11
+Total count :67
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :2
+Total count :10
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :10
+Total count :61
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :9
+Total count :63
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :2
+Total count :3
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :3
+Total count :6
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :6
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :3
+Dice value of D2 :3
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :11
+Total count :66
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :1
+Total count :0
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :5
+Dice value of D2 :6
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :3
+Dice value of D2 :2
+Dice value of D1 :4
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :7
+Total count :43
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :3
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :6
+Total count :39
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :5
+Total count :28
+Dice value of D1 :3
+Dice value of D2 :2
+Dice value of D1 :3
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :5
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :18
+Total count :123
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :1
+Dice value of D2 :2
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :4
+Total count :19
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :2
+Total count :5
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :3
+Total count :8
+Dice value of D1 :3
+Dice value of D2 :2
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :3
+Total count :11
+Dice value of D1 :4
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :3
+Total count :14
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :4
+Total count :21
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :6
+Total count :40
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :1
+Total count :0
+Dice value of D1 :1
+Dice value of D2 :2
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :9
+Total count :57
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :2
+Total count :10
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :1
+Total count :0
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :5
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :16
+Total count :122
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :1
+Total count :0
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :1
+Total count :0
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :1
+Total count :0
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :5
+Total count :26
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :3
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :5
+Total count :23
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :1
+Total count :0
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :3
+Total count :10
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :2
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :8
+Total count :44
+Dice value of D1 :5
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :5
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :17
+Total count :126
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :1
+Total count :0
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :4
+Total count :16
+Dice value of D1 :5
+Dice value of D2 :6
+Dice value of D1 :3
+Dice value of D2 :5
+Dice value of D1 :6
+Dice value of D2 :5
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :17
+Total count :128
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :3
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :4
+Total count :30
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :7
+Total count :44
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :4
+Total count :18
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :4
+Total count :25
+Dice value of D1 :6
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :4
+Dice value of D2 :5
+Dice value of D1 :3
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :9
+Total count :70
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :5
+Total count :30
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :3
+Total count :16
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :6
+Total count :39
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :8
+Total count :43
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :1
+Total count :0
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :1
+Dice value of D2 :2
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :3
+Dice value of D2 :2
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :5
+Dice value of D2 :6
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :19
+Total count :140
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :2
+Total count :5
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :6
+Number of Rolls :2
+Total count :9
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :1
+Total count :0
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :2
+Total count :3
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :3
+Total count :20
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :1
+Total count :0
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :1
+Total count :0
+Dice value of D1 :6
+Dice value of D2 :1
+Number of Rolls :1
+Total count :0
+Dice value of D1 :5
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :3
+Total count :15
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :1
+Total count :0
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :3
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :6
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :13
+Total count :89
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :2
+Total count :6
+Dice value of D1 :5
+Dice value of D2 :2
+Number of Rolls :1
+Total count :0
+Dice value of D1 :3
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :2
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :1
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :25
+Total count :157
+Dice value of D1 :6
+Dice value of D2 :4
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :2
+Total count :10
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :3
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :2
+Dice value of D2 :6
+Dice value of D1 :4
+Dice value of D2 :2
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :1
+Dice value of D2 :4
+Dice value of D1 :2
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :3
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :3
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :5
+Number of Rolls :16
+Total count :95
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :1
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :5
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :3
+Number of Rolls :11
+Total count :80
+Dice value of D1 :3
+Dice value of D2 :1
+Dice value of D1 :3
+Dice value of D2 :4
+Number of Rolls :2
+Total count :4
+Total Number of program runs 100:
+Highest Number of Rolls :25
+Total count :157
