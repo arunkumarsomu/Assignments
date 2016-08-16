@@ -2,12 +2,7 @@ import java.util.Random;
 
 public class diceRoll {
 
-//	public diceRoll(){
-//		
-//		long seed = (new java.util.Date()).getTime();
-//	    
-//	}
-	public  int rollDice(){
+	public  int rollDice(){	
 		
 		int diceValue = randInt(1,6);
 		return diceValue;
