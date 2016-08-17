@@ -1,0 +1,87 @@
+Do you want to play Craps ( Enter Y/y to play) : 
+y
+Enter how much money you got : 
+100
+!!!Lets Play New Dices Game!!!
+Enter how much money you wanna bet : 
+5
+Dice value of D1 :6
+Dice value of D2 :3
+The Point is :9
+Dice value of D1 :6
+Dice value of D2 :6
+Dice value of D1 :2
+Dice value of D2 :3
+Dice value of D1 :4
+Dice value of D2 :6
+Dice value of D1 :1
+Dice value of D2 :3
+Dice value of D1 :5
+Dice value of D2 :1
+Dice value of D1 :4
+Dice value of D2 :4
+Dice value of D1 :1
+Dice value of D2 :5
+Dice value of D1 :4
+Dice value of D2 :5
+You Won Hurray!!!
+Number of Rolls :9
+You have $105 remaining
+Do you want play again ( Enter Y/y to play) : 
+y
+!!!Lets Play New Dices Game!!!
+Enter how much money you wanna bet : 
+5
+Dice value of D1 :5
+Dice value of D2 :2
+You Won Hurray!!!
+Number of Rolls :1
+You have $110 remaining
+Do you want play again ( Enter Y/y to play) : 
+y
+!!!Lets Play New Dices Game!!!
+Enter how much money you wanna bet : 
+10
+Dice value of D1 :3
+Dice value of D2 :4
+You Won Hurray!!!
+Number of Rolls :1
+You have $120 remaining
+Do you want play again ( Enter Y/y to play) : 
+y
+!!!Lets Play New Dices Game!!!
+Enter how much money you wanna bet : 
+20
+Dice value of D1 :4
+Dice value of D2 :2
+The Point is :6
+Dice value of D1 :5
+Dice value of D2 :5
+Dice value of D1 :3
+Dice value of D2 :5
+Dice value of D1 :2
+Dice value of D2 :2
+Dice value of D1 :6
+Dice value of D2 :2
+Dice value of D1 :1
+Dice value of D2 :5
+You Won Hurray!!!
+Number of Rolls :6
+You have $140 remaining
+Do you want play again ( Enter Y/y to play) : 
+y
+!!!Lets Play New Dices Game!!!
+Enter how much money you wanna bet : 
+140
+Dice value of D1 :6
+Dice value of D2 :5
+The Point is :11
+Dice value of D1 :2
+Dice value of D2 :5
+You Lost Sorry!!!
+Number of Rolls :2
+You have $0 remaining
+You have $0
+No of Wins :4
+No of Loss :1
+Maximum Number of Rolls :9
