@@ -49,8 +49,8 @@ mysql> explain major_class_xref;
 | Field    | Type    | Null | Key | Default | Extra |
 +----------+---------+------+-----+---------+-------+
 | id       | int(11) | NO   | PRI | NULL    |       |
-| major_id | int(11) | YES  | MUL | NULL    |       |
-| class_id | int(11) | YES  | MUL | NULL    |       |
+| major_id | int(11) | NO   | MUL | NULL    |       |
+| class_id | int(11) | NO   | MUL | NULL    |       |
 +----------+---------+------+-----+---------+-------+
 3 rows in set (0.00 sec)
 
