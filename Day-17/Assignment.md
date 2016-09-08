@@ -256,4 +256,91 @@ mysql> select * from assignment;
 4 rows in set (0.00 sec)
 
 
+mysql> select major.name, class.name  from major , class , major_class_xref  where  major.id = major_class_xref.major_id  and
+    -> major_class_xref.class_id = class.id
+    -> and major.id = 1;
++------------------+-------------+
+| name             | name        |
++------------------+-------------+
+| General Business | English 101 |
+| General Business | English 202 |
+| General Business | Math 201    |
++------------------+-------------+
+3 rows in set (0.05 sec)
+
+
+
+mysql> select major.name, class.name  from major , class , major_class_xref  where  major.id = major_class_xref.major_id  and
+    -> major_class_xref.class_id = class.id
+    -> and major.id = 5;
++-------------+----------+
+| name        | name     |
++-------------+----------+
+| Engineering | Math 301 |
+| Engineering | Math 302 |
+| Engineering | Math 303 |
++-------------+----------+
+3 rows in set (0.00 sec)
+
+
+mysql> select major.name, class.name  from major , class , major_class_xref  where  major.id = major_class_xref.major_id  and
+    -> major_class_xref.class_id = class.id
+    -> and class.id = 2;
++---------+-------------+
+| name    | name        |
++---------+-------------+
+| Finance | English 102 |
++---------+-------------+
+1 row in set (0.00 sec)
+
+
+mysql> select major.name, class.name  from major , class , major_class_xref  where  major.id = major_class_xref.major_id  and
+    -> major_class_xref.class_id = class.id
+    -> and class.id = 5;
++------------------+-------------+
+| name             | name        |
++------------------+-------------+
+| General Business | English 202 |
++------------------+-------------+
+1 row in set (0.00 sec)
+
+
+mysql> select student.first_name, class.name from student, class, student_class_xref where student.id = student_class_xref.student_id and
+    -> student_class_xref.class_id = class.id and
+    -> class.id = 1;
++------------+-------------+
+| first_name | name        |
++------------+-------------+
+| Eric       | English 101 |
++------------+-------------+
+1 row in set (0.00 sec)
+
+
+mysql> select student.first_name, class.name from student, class, student_class_xref where student.id = student_class_xref.student_id and
+    -> student_class_xref.class_id = class.id and
+    -> student.id = 100;
++------------+-------------+
+| first_name | name        |
++------------+-------------+
+| Eric       | English 101 |
+| Eric       | English 102 |
+| Eric       | English 103 |
+| Eric       | English 201 |
++------------+-------------+
+4 rows in set (0.00 sec)
+
+
+
+mysql> select student.first_name, class.name from student, class, student_class_xref where student.id = student_class_xref.student_id and
+    -> student_class_xref.class_id = class.id and
+    -> student.id = 120;
++------------+-------------+
+| first_name | name        |
++------------+-------------+
+| Adam       | English 303 |
+| Adam       | Math 201    |
+| Adam       | Math 202    |
+| Adam       | Math 203    |
++------------+-------------+
+4 rows in set (0.00 sec)
 
