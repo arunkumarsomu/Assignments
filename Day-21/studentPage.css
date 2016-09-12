@@ -1,0 +1,41 @@
+
+.bold {
+	font-weight:bold;
+	
+}
+img{
+	width:100px; height:100px;
+}
+.red{
+	color:red;
+	
+}
+.italics{
+	font-style:italic;
+}
+span{
+	color:red;
+	font-weight:bold;
+}
+
+table,td{
+	border:1px solid; color:brown; 
+	border-collapse:collapse;
+}
+
+
+div{
+ width:49%;
+display: inline-block;
+text-align:center;
+vertical-align:text-top;
+
+}
+
+ul{
+	vertical-align:text-top;
+}
+
+#right {
+	color:black;
+}
