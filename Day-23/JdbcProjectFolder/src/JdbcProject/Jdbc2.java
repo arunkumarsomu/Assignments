@@ -4,7 +4,7 @@ import java.util.*;
 import java.sql.*;
 import java.io.FileInputStream;
 
-public class JdbcStudent {
+public class Jdbc2 {
 
 	public static String userName ;
 	public static String passWord ;
