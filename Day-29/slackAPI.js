@@ -1,5 +1,4 @@
-
-var accToken = "PLEASE USE YOUR TOKEN HERE";
+var accToken = getSlackToken();
 
 $(document).ready(function(){
   
@@ -12,6 +11,7 @@ $(document).ready(function(){
 		},
 		method: "POST"
 		})
+	  
 	}
 	      
 	$("#submit").click(function() {
@@ -22,6 +22,7 @@ $(document).ready(function(){
 		 postMessage(msg,channel)	;
 		});
 		
+  
     $.ajax("https://slack.com/api/channels.list", {
     data: {
 	  token: accToken
@@ -41,11 +42,14 @@ $(document).ready(function(){
 		 	$addDiv.append("<br>")
 		 $addDiv.append(radioButton1)
 		 $addDiv.append("<br>")
-					 
+		 
+		// div1.appendChild(radioButton1);
+			 
 	 }
  
     })
   });
+
 
 function getChannelList() {
   var url = "https://slack.com/api/channels.list"
