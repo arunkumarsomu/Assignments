@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Student Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	var id;
+   var name;
+   var sat;
+   var gpa;
+   var major;
+   var studentData;
+    
+		
+		console.log("id=",id);
+		console.log("name=",name);
+		console.log("sat=",sat);
+		console.log("sgpa=",gpa);
+		console.log("maj=",major);
+			
+		
+		function getCookie() {
+		studentData = localStorage.stud;
+		console.log("Local2 = ",localStorage.stud);
+		
+			return "";
+		}
+		
+		
+		function addStudent(){
+			sat = document.getElementById("studSat").value;
+			gpa=document.getElementById("studGpa").value;
+			major=document.getElementById("studMajor").value;
+			fname=document.getElementById("firstName").value;
+			lname=document.getElementById("lastName").value;
+		
+		var addLink = "http://localhost:8080/student/add/" +fname+"/"+lname+"/"+sat+"/"+gpa+"/"+major;
+				$.ajax({	
+						url: addLink
+						}).then(function(data) {
+							console.log(data);
+						});
+						
+		
+		}
+		
+		
+	</script>
+   </head>
+<body>
+<h3> <a href=file:///C:/Users/admin/Desktop/htmls/studentPrint.html>Main Page</a> </h3>
+<div class="container">
+  <h2>Student Add Form</h2>
+<form action="javascript:addStudent();">
+
+  <fieldset>
+    <div class="form-group">
+    Firstname:
+    <input id="firstName"  class="form-control" type="text" >
+    <br>
+	 </div>	
+	 <div class="form-group">
+    Lastname:
+    <input id="lastName"  class="form-control" type="text" >
+    <br>
+	 </div>	
+	  <div class="form-group">
+	SAT:<input id="studSat" class="form-control"  type="text" >
+    <br>
+	 </div>
+	 <div class="form-group">
+    GPA:
+    <input id="studGpa" class="form-control" type="text"  >
+    <br>
+	 </div>
+	 <div class="form-group">
+	Major:
+    <input id="studMajor" class="form-control" type="text"  >
+    <br>
+	 </div>
+		
+	<br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+</div>
+
+
+</body>
+</html>

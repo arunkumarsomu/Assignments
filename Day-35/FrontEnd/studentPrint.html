@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Webpage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	var id;
+	var spanValue;
+	
+	$(document).ready(function() {
+
+		$.ajax({
+        		url: "http://localhost:8080/students"
+    		}).then(function(data) {
+    			console.log(data);
+				for (var i=0; i < data.length; i++) {
+					console.log("the data was", data[i].first_name);
+												
+					//  var row = "<tr><td>" + data[i].id + "</td><td>"+ "<a href=http://localhost:8080/studentOne/"+data[i].id + "> " +  data[i].first_name + " "+ data[i].last_name + " </a></td><td>  " + data[i].sat+ "</td><td>  " + data[i].gpa + "</td></tr>";
+					var row2 = data[i].first_name + " "+ data[i].last_name + " </a></td><td>  " + data[i].sat+ "</td><td>  " + data[i].gpa + "</td><td>  " + data[i].major_id + "</td>";
+					var row = '<tr class="success"><td>' + data[i].id + "</td><td>"+ "<a href=C:/Users/admin/Desktop/htmls/oneStudent.html> " + row2;
+					var button1 = '<td><a href="#"><span title="edit" class="glyphicon glyphicon-pencil"></span> </a> </td>' ;
+					var button2 = '<td><a href="#"><span title="delete" class="glyphicon glyphicon-trash"></span> </a></td></tr>' ;
+					
+							
+					row = row + button1+ button2;
+					$("#studentTable").append(row);
+			
+				}
+				
+				var link = '<h4> <a href="file:///C:/Users/admin/Desktop/htmls/addStudent.html">Add Student</a> </h4>'
+				$("body").append(link);
+				
+				$("tr").click(function(){
+				   console.log("tr val is =",$(this).attr('value'));
+					var trValue = $(this).attr('value');
+					 id = $(this).find("td:first").html(); 
+					var delLink = "http://localhost:8080/student/delete/" +id;						 
+					console.log("id=",id);
+						var tdValue = $(this).children('td').map(function (index, val) {
+							return $(this).text();
+							}).toArray();
+							if (spanValue === "delete"){
+								  console.log("delLink=",delLink);
+								 if (confirm('Sure? you want to delete student?')) {
+										alert('Thanks for confirming');
+										
+											$.ajax({	
+												url: delLink
+											}).then(function(data) {
+												//console.log(data);
+												alert(data);
+												location.reload();
+											});
+											
+											} else {
+										alert('Student record remains :)');
+									}
+								  
+										
+							}
+							if (spanValue === "edit"){
+								  console.log("edit");
+								  window.location.href="file:///C:/Users/admin/Desktop/htmls/editStudent.html";
+									
+							}
+					console.log("tdValue = ",tdValue);	
+					setCookie(tdValue);	
+							
+				//	$("a[href='http://localhost:8080/student/delete/']").attr('href', delLink);
+				});
+			<!-- span click fun ->
+				$("span").click(function(){
+									spanValue =  $(this).attr("title");
+				})  ;
+			
+					
+		});  <!-- end for ajax then --->
+			
+			function setCookie(value) {
+                localStorage.setItem("stud", value);
+			  
+			}
+	
+			function getCookie() {
+				console.log("Local 1= ",localStorage.stud);
+					return "";
+			}
+		
+}); <!-- end ready -->
+
+	</script>
+</head>
+<body>
+<h1> Students List</h1>
+<table id="studentTable" align="center" class="table-bordered" class="table-responsive">
+  <tr class="table-bordered">
+    <th class="studId">Id</th>
+    <th>Full Name</th>
+    <th class="SAT">SAT</th>
+	<th>GPA</th>
+	<th>Major Id</th>
+	<th>Edit</th>
+	<th>Delete</th>
+  </tr
+  </table>
+</body>
+</html>

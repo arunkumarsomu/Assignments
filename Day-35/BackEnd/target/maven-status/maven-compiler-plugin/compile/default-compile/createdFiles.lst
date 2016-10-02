@@ -1,0 +1,10 @@
+com\tiy\ssa\simpleWebApp\service\StudentService.class
+com\tiy\ssa\simpleWebApp\dao\IStudentDAO.class
+com\tiy\ssa\simpleWebApp\service\IStudentService.class
+com\tiy\ssa\simpleWebApp\controller\HomeController.class
+com\tiy\ssa\simpleWebApp\config\DbConfiguration.class
+com\tiy\ssa\simpleWebApp\controller\StudentController.class
+com\tiy\ssa\simpleWebApp\dao\StudentDAO.class
+com\tiy\ssa\simpleWebApp\config\MvcConfiguration.class
+com\tiy\ssa\simpleWebApp\entity\Student.class
+com\tiy\ssa\simpleWebApp\application\Application.class
