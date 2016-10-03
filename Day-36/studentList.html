@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Webpage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript">
+	var id;
+	var spanValue;
+	console.log("Before");
+			var app = angular.module("myApp", []);
+							app.controller('myCtrl', function($scope, $location, $http) {
+							$scope.hideVal = false;
+							$http.get("http://localhost:8080/students")
+							.then(function(response) {
+								
+									
+								for(var i in response.data){
+									response.data[i].vis = 1;
+									console.log("Name =",response.data[i]);
+								}
+								$scope.records = response.data;
+								
+							});
+								$scope.getVal = function (stud) {
+									var id = stud.id;
+									console.log("ID =",id);
+									var newStud = [stud.id,stud.first_name+stud.last_name,stud.sat,stud.gpa,stud.major_id," "," "];
+									console.log("New stud=",newStud);
+									localStorage.setItem("stud", newStud);
+									spanValue =  $(this).attr("title");
+									console.log("Span value=", spanValue);
+									};
+								$scope.hideIt = function(stud){
+									
+									stud.vis =0;						
+								}	
+									
+								$scope.refresh = function(){	
+									location.reload();
+								}
+									
+						});
+						console.log("After");
+						
+
+						
+					
+	$(document).ready(function() {
+					 console.log("test");	
+					
+							
+			
+					
+			
+			
+}); <!-- end ready -->
+
+	</script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl"> 
+<h1 align="center"> Students List</h1>
+
+<table id="studentTable" ng-controller="myCtrl" border="1">
+  <tr class="table-bordered" >
+    <th class="studId"> ID </th>
+    <th>Full Name</th>
+    <th class="SAT">SAT</th>	
+	<th>GPA</th>
+	<th>Major Id</th>
+	<th>Hide</th>
+  </tr>
+<tr id="rows" ng-hide="x.vis == 0" ng-repeat="x in records"  ng-click="getVal(x)">
+	<td>{{x.id}}</td>
+	<td><a href="C:/Users/admin/Desktop/htmls/oneStudent.html">{{x.first_name}} {{x.last_name}} </td>
+	<td>{{x.sat}}</td>
+	<td>{{x.gpa}}</td>
+	<td>{{x.major_id}}</td>
+	<td><a href="#"><span class="glyphicon glyphicon-minus-sign" ng-click="hideIt(x)"></span> </a></td>
+	
+	
+</tr>
+</table>
+<button type="button" ng-click="refresh()">Refresh</button>
+
+</body>
+</html>
