@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Webpage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript">
+	var id;
+	var spanValue;
+	console.log("Before");
+			var app = angular.module("myApp", []);
+							app.controller('myCtrl', function($scope, $http) {
+							$scope.space = " ";
+							$http.get("http://localhost:8080/students")
+							.then(function(response) {
+								$scope.records = response.data;
+								for(var stud in $scope.records){
+								   $scope.records[stud].name = $scope.records[stud].first_name + "  "+ $scope.records[stud].last_name;
+								}
+								
+							});
+								$scope.getVal = function (stud) {
+									var id = stud.id;
+									console.log("ID =",id);
+									var newStud = [stud.id,stud.first_name+" "+stud.last_name,stud.sat,stud.gpa,stud.major_id," "," "];
+									console.log("New stud=",newStud);
+									localStorage.setItem("studID", stud.id);
+									localStorage.setItem("studFname", stud.first_name);
+									localStorage.setItem("studLname", stud.last_name);
+									localStorage.setItem("studSat", stud.sat);
+									localStorage.setItem("studGpa", stud.gpa);
+									localStorage.setItem("studMajor", stud.major_id);
+									console.log("localStorage.studFname=",localStorage.studFname);
+										console.log("localStorage.studSat=",localStorage.studSat);
+								};
+								
+								$scope.delCall = function(stud){
+								
+									 if (confirm('Sure? you want to delete student?')) {
+											$http.get("http://localhost:8080/student/delete/"+stud.id)
+												.success(function(result) {
+												  location.reload();
+											});
+											
+									} else {
+										alert('Student record remains :)');
+									}
+								
+								}
+									
+						});
+						console.log("After");
+					
+					
+	$(document).ready(function() {
+					 console.log("test");	
+					
+				var link = '<h4 align="center"> <button><a href="file:///C:/Users/admin/Desktop/AngularJS/addStudent.html">Add Student</a></button> </h4>'
+				$("body").append(link);
+			
+			
+}); <!-- end ready -->
+
+	</script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl"> 
+<h1 align="center"> Students List</h1>
+
+<table id="studentTable"  border="1">
+  <tr class="table-bordered" >
+    <th class="studId"> ID </th>
+    <th>Full Name</th>
+    <th class="SAT">SAT</th>
+	<th>GPA</th>
+	<th>Major Id</th>
+	<th>Edit</th>
+	<th>Delete</th>
+  </tr>
+<tr id="rows" ng-repeat="x in records" ng-click="getVal(x)">
+	<td>{{x.id}}</td>
+	<td><a href="C:/Users/admin/Desktop/AngularJS/oneStudent.html">{{x.name}} </td>
+	<td>{{x.sat}}</td>
+	<td>{{x.gpa}}</td>
+	<td>{{x.major_id}}</td>
+	<td><a href="file:///C:/Users/admin/Desktop/AngularJS/editStudent.html"><span class="glyphicon glyphicon-pencil"></span> </a></td>
+	<td><a href="#"><span class="glyphicon glyphicon-trash" ng-click="delCall(x)"></span> </a></td>
+	
+</tr>
+</table>
+
+</body>
+</html>

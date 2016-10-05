@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ table {
+ table-layout: fixed;
+	font-size:20px;
+	font-family:arial;
+    width: 330px;
+    height: 350px;
+ }
+ td{
+ 
+ }
+</style>
+<title>Edit Student Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript">
+
+	var app = angular.module("myApp", []);
+app.controller('myCtrl', function($scope, $http) {
+ 
+		$scope.id = localStorage.studID;
+		$scope.fname = localStorage.studFname;	
+		$scope.lname =localStorage.studLname ;
+		$scope.sat = parseInt(localStorage.studSat, 10);
+		$scope.gpa = parseInt(localStorage.studGpa,10);
+		$scope.major = parseInt(localStorage.studMajor,10);
+					
+		console.log("id=",$scope.id);
+		console.log("name=",$scope.fname);
+		console.log("sat=",$scope.sat);
+		console.log("sgpa=",$scope.gpa);
+		console.log("maj=",$scope.major);
+				
+				
+		 $scope.updateStudent = function(){
+		
+			localStorage.setItem("studID", $scope.id);
+			localStorage.setItem("studFname", $scope.fname);
+			localStorage.setItem("studLname", $scope.lname);
+			localStorage.setItem("studSat", $scope.sat);
+			localStorage.setItem("studGpa", $scope.gpa);
+			localStorage.setItem("studMajor", $scope.major);
+		 
+		
+			console.log("fname=",$scope.fname);
+			console.log("lname=",$scope.lname);
+			console.log("major=",$scope.major);
+			$scope.editLink = "http://localhost:8080/student/update/" +$scope.id+"/"+$scope.fname+"/"+$scope.lname+"/"+$scope.sat+
+							"/"+$scope.gpa+"/"+$scope.major;
+							
+							$http.get($scope.editLink)
+							.then(function(response) {
+								console.log("update success");
+							});
+			
+		}
+		
+		
+		
+	//	ng-pattern ="/^[a-zA-Z\s]*$/" 
+		
+		
+		});
+		
+	app.directive('myDirective', function() {
+				  return {
+					require: 'ngModel',
+					link: function (scope, element, attr, ngModelCtrl) {
+					  function fromUser(text) {
+						var transformedInput = text.replace(/[^A-Za-z ]/g, '');
+					//	console.log(transformedInput);
+						if(transformedInput !== text) {
+							ngModelCtrl.$setViewValue(transformedInput);
+							ngModelCtrl.$render();
+						}
+						return transformedInput;
+					  }
+					  ngModelCtrl.$parsers.push(fromUser);
+					}
+				  };
+				});
+		
+		
+	</script>
+	
+   </head>
+<body>
+<h3> <a href=file:///C:/Users/admin/Desktop/AngularJS/studentList.html>Main Page</a> </h3>
+<div ng-app="myApp" ng-controller="myCtrl"> 
+<div class="container">
+  <h2 align="center">Student Edit Form</h2>
+
+  
+<form name="myForm" ng-submit="updateStudent()">
+<table class="table" align="center">	
+
+<tr class="success"><td>ID:</td><td><input name="studId" ng-model="id"  disabled></td>
+<td><span </span></td>
+    <br>
+<tr class="success"><td>First Name:</td><td><input name="FName" ng-model="fname" ng-pattern ="/^[a-zA-Z\s]*$/"  required my-directive type="text" ></td>
+<td><span ng-show="myForm.FName.$touched && myForm.FName.$invalid">First Name is Required</span></td>
+   	<br>	
+<tr class="success"><td>Last Name:</td><td> <input name="LName" ng-model="lname"  required my-directive type="text" ></td>
+<td><span ng-show="myForm.LName.$touched && myForm.LName.$invalid">Last Name is Required</span></td>
+<br>
+<tr class="success"><td>SAT:</td><td><input name="studSat" ng-model="sat"  min="0" max="1600" type="number" required  ></td>
+<td><span ng-show="myForm.studSat.$touched && myForm.studSat.$invalid">SAT is invalid, please enter a value btw 0 and 1600</span></td>
+<br>	
+<tr class="success"><td>GPA:</td><td><input name="studGpa" ng-model="gpa" min="0.0" max="4.0" step="any" type="number" required ></td>
+<td><span ng-show="myForm.studGpa.$touched && myForm.studGpa.$invalid">GPA is invalid, please enter a value btw 0.0 and 4.0</span></td>
+<br>	 
+<tr class="success"><td>Major ID:</td><td><input name="studMajor" ng-model="major"   type="text"  ></td>
+<td><span ng-show="myForm.studMajor.$touched && myForm.studMajor.$invalid">Major ID is Invalid</span></td>
+<br>
+<br> <tr><td></td>
+<td>	 <input type="submit" value="Submit"> </td>
+	
+</form>
+</div>
+</div>
+
+
+</body>
+</html>

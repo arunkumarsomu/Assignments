@@ -1,0 +1,80 @@
+HTML:
+
+<section ng-app="myapp" ng-controller="MainCtrl">
+  Value of global variable read by AngularJS: {{variable1}}
+</section>
+
+JavaScript:
+
+// global variable outside angular
+var variable1 = true;
+
+var app = angular.module('myapp', []);
+
+app.controller('MainCtrl', ['$scope', '$window', function($scope, $window) {
+  $scope.variable1 = $window.variable1;
+}]);
+
+
+
+
+
+
+			
+					var app = angular.module("myApp", []);
+					   
+						app.controller("myCtrl", ['$scope', '$window', function($scope, $window)  {
+						for (var i=0; i < data.length; i++) {
+							console.log("the data was", $window.data[i].first_name);
+						$scope.records[i].push(
+							{
+							  "id" : $window.data[i].id,
+							  "fullname" : $window.data[i].first_name + " "+ $window.data[i].last_name,
+							  "sat": $window.data[i].sat,
+							  "gpa": $window.data[i].gpa,
+							  "major":$window.data[i].major_id,
+							  "edit": '<td><a href="#"><span title="edit" class="glyphicon glyphicon-pencil"></span> </a> </td>' ,
+							  "delete":'<td><a href="#"><span title="delete" class="glyphicon glyphicon-trash"></span> </a></td></tr>' 
+							});		
+						}							
+					}]);
+
+
+
+<table id="studentTable" ng-controller="myCtrl" border="1">
+  <tr class="table-bordered">
+    <th class="studId"> ID </th>
+    <th>Full Name</th>
+    <th class="SAT">SAT</th>
+	<th>GPA</th>
+	<th>Major Id</th>
+	<th>Edit</th>
+	<th>Delete</th>
+  </tr>
+<tr ng-repeat="x in records">
+	<td>{{x.id}}</td>
+	<td>{{x.fullname}}</td>
+	<td>{{x.sat}}</td>
+	<td>{{x.gpa}}</td>
+	<td>{{x.major}}</td>
+	<td>{{x.edit}}</td>
+    <td>{{x.delete}}</td>
+</tr>
+</table>
+
+
+
+for (var i=0; i < response.data.length; i++) {
+									console.log("the data was", response.data[i].first_name);
+									$scope.records[i].push({
+									"id" : response.data[i].id,
+									"fullname" : response.data[i].first_name + " "+ response.data[i].last_name,
+									"sat": response.data[i].sat,
+									"gpa": response.data[i].gpa,
+									"major":response.data[i].major_id,
+									"edit": '<td><a href="#"><span title="edit" class="glyphicon glyphicon-pencil"></span> </a> </td>' ,
+									"delete":'<td><a href="#"><span title="delete" class="glyphicon glyphicon-trash"></span> </a></td></tr>' 
+																		
+									})
+								}
+
