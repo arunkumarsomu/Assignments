@@ -1,0 +1,26 @@
+
+<div ng-controller="listCtrl"> 
+<h1 align="center"> Students List</h1>
+
+<table id="studentTable" class="w3-table-all " align="center" >
+  <tr >
+    <th class="studId"> ID </th>
+    <th>Full Name</th>
+    <th class="SAT">SAT</th>
+	<th>GPA</th>
+	<th>Major Id</th>
+	<th>Edit</th>
+	<th>Delete</th>
+  </tr>
+<tr id="rows" class="w3-hover-blue" ng-repeat="x in records" ng-click="getVal(x)">
+	<td>{{x.id}}</td>
+	<td><a href="#/oneStudent">{{x.name}} </td>
+	<td>{{x.sat}}</td>
+	<td>{{x.gpa}}</td>
+	<td>{{x.major_id}}</td>
+	<td><a href="#/editStudent"><span class="glyphicon glyphicon-pencil"></span> </a></td>
+	<td><a href="#/students"><span class="glyphicon glyphicon-trash" ng-click="delCall(x)"></span> </a></td>
+	
+</tr>
+</table>
+</div>

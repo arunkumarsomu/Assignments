@@ -1,0 +1,23 @@
+
+<div ng-controller="addCtrl"> 
+<div >
+  <h1 align="center">Add Student</h1>
+<form name="myForm" ng-submit="addStudent()">
+<table class="table"  class="w3-table-all " align="center">	
+<br>
+<tr class="success"><td>First Name:</td><td><input name="FName" ng-model="fname" ng-pattern ="/^[a-zA-Z\s]*$/"  required my-directive type="text" ></td>
+<td><span ng-show="myForm.FName.$touched && myForm.FName.$invalid">First Name is Required</span></td>	
+<tr class="success"><td>Last Name:</td><td> <input name="LName" ng-model="lname"  required my-directive type="text" ></td>
+<td><span ng-show="myForm.LName.$touched && myForm.LName.$invalid">Last Name is Required</span></td>
+<tr class="success"><td>SAT:</td><td><input name="studSat" ng-model="sat"  min="0" max="1600" type="number" required  ></td>
+<td><span ng-show="myForm.studSat.$touched && myForm.studSat.$invalid">SAT is invalid, please enter a value btw 0 and 1600</span></td>
+<tr class="success"><td>GPA:</td><td><input name="studGpa" ng-model="gpa" min="0.0" max="4.0" step="any" type="number" required ></td>
+<td><span ng-show="myForm.studGpa.$touched && myForm.studGpa.$invalid">GPA is invalid, please enter a value btw 0.0 and 4.0</span></td>	 
+<tr class="success"><td>Major ID:</td><td><input name="studMajor" ng-model="major"   type="text"  ></td>
+<td><span ng-show="myForm.studMajor.$touched && myForm.studMajor.$invalid">Major ID is Invalid</span></td>
+<tr><td></td>
+<td> <input type="submit" value="Submit"> </td>
+	
+</form>
+</div>
+</div>
