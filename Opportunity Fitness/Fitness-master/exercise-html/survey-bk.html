@@ -1,0 +1,36 @@
+
+<div ng-controller="surveyCtrl"> 
+<div >
+  <h1 align="center">Survey Page</h1>
+
+<br>
+
+Enter your age:<input name="age" ng-model="age"  type="text" required  >
+<br>
+Enter your height:<input name="ht" ng-model="height"  type="text" required  >
+<br>
+Enter your weight:<input name="weight" ng-model="weight"  type="text" required  >
+<br>
+Enter your fitness/activity level (New to working out '1',Familiar working out '2', Expert '3' ):
+<input name="intensity" ng-model="intensity"  type="number" min='0' max='3' required >
+<br> 
+Enter start date for this program:
+        <input type="text" b-datepicker ng-model="date" />
+        <button type="button" class="btn" data-toggle="datepicker"> <i class="icon-calendar"></i>
+        </button>
+         
+
+<br>
+
+
+
+
+ <input type="button" value="Submit" ng-click="getRoutine(intensity)"> 
+ 
+	<br>
+ <a href="#/exerciseTracking/" ng-show="surveyDone" class="btn btn-info" role="button">Proceed</a>
+</div>
+</div>
+
+
+

@@ -1,0 +1,16 @@
+<div ng-controller="exCtrl"> 
+
+  <h1 align="center">Workouts</h1>
+
+  <div>
+   
+    <ul ng-repeat="ex in records">
+	
+     <li>{{ex.exercise_name}}</li>
+		 <youtube-video video-url="ex.url"></youtube-video>
+
+    </ul>
+
+	
+</div>
+</div>

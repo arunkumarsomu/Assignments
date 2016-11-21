@@ -1,0 +1,258 @@
+
+<div ng-controller="routineCtrl"> 
+
+<br>
+<div id="exportthis" class="table-responsive" >
+  <h1 style="color:white;" align="center">Workout Routine </h1>
+<br>
+ 
+<table id="workoutRoutine" class="table table-bordered"  align="center" >
+<tr  align="right-side">
+	<th id="routineHead"><div style="text-align: center;"><span>Week/Day</div></th>
+    <th id="routineHead"><div style="text-align: center;"><span>Day 1</div></th>
+    <th id="routineHead"><div style="text-align: center;"><span>Day 2</div></th>
+	<th id="routineHead"><div style="text-align: center;"><span>Day 3</div></th>
+    <th id="routineHead"><div style="text-align: center;"><span>Day 4</div></th>
+	<th id="routineHead"><div style="text-align: center;"><span>Day 5</div></th>
+<!-- 	<th id="day6"><div style="text-align: center;"><span>Day 6</th>
+	<th id="day7"><div style="text-align: center;"><span>Day 7</th>  -->
+</tr>
+ 
+ 
+<tr id="rows"  >
+<td id="routineHead">Week 1</td>
+	<td id="routineTD" ng-class="{'active':!dailyFlag[0],'success':dailyFlag[0]}" ><ul ng-repeat="x in records | filter: {'dayNo' : 'WeekOneDayOne' }">
+  <li >
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+ </ul>
+ 
+</td>
+	
+<td  id="routineTD" ng-class="{'active':!dailyFlag[1],'success':dailyFlag[1]}"><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekOneDayTwo' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+</td>
+<td  id="routineTD" ng-class="{'active':!dailyFlag[2],'success':dailyFlag[2]}"><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekOneDayThree' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+<td  id="routineTD" ng-class="{'active':!dailyFlag[3],'success':dailyFlag[3]}" ><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekOneDayFour' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+</td>
+<td  id="routineTD" ng-class="{'active':!dailyFlag[4],'success':dailyFlag[4]}"><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekOneDayFive' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+</td>
+
+<!-- 			<td style="white-space:nowrap;"><output>&nbsp; REST DAY </output></td>
+			<td style="white-space:nowrap;"><output>&nbsp; REST DAY </output></td>  -->
+</tr>
+
+<tr>
+<td id="routineHead"></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[0],'success':dailyFlag[0]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[0]" ng-click="getExVal('WeekOneDayOne')"  class="btn btn-active"  role="button" >Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[1],'success':dailyFlag[1]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[1]" ng-click="getExVal('WeekOneDayTwo')"   class="btn btn-active" role="button">Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[2],'success':dailyFlag[2]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[2]"  ng-click="getExVal('WeekOneDayThree')"  class="btn btn-active" role="button">Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[3],'success':dailyFlag[3]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[3]"  ng-click="getExVal('WeekOneDayFour')"  class="btn btn-active" role="button">Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[4],'success':dailyFlag[4]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[4]"  ng-click="getExVal('WeekOneDayFive')"   class="btn btn-active" role="button">Track It</button></span></div></td>
+<!-- <td><td>  -->
+</tr>
+
+
+<tr id="rows" class="w3-hover-blue"  >
+<td id="routineHead">Week 2</td>
+	<td  id="routineTD" ng-class="{'active':!dailyFlag[5],'success':dailyFlag[5]}" ><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekTwoDayOne' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+	</td>
+	
+<td  id="routineTD" ng-class="{'active':!dailyFlag[6],'success':dailyFlag[6]}"><ul>
+ <li ng-repeat="x in records | filter: {'dayNo' : 'WeekTwoDayTwo' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+ </li>
+</ul>
+
+	</td>
+			<td  id="routineTD" ng-class="{'active':!dailyFlag[7],'success':dailyFlag[7]}" ><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekTwoDayThree' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+			<td   id="routineTD" ng-class="{'active':!dailyFlag[8],'success':dailyFlag[8]}"><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekTwoDayFour' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+			<td   id="routineTD" ng-class="{'active':!dailyFlag[9],'success':dailyFlag[9]}"><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekTwoDayFive' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+</td>
+<!-- 			<td style="white-space:nowrap;"><output>&nbsp; REST DAY </output></td>
+			<td style="white-space:nowrap;"><output>&nbsp; REST DAY </output></td>  -->
+</tr>
+
+<tr>
+<td id="routineHead"></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[5],'success':dailyFlag[5]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[5]"  ng-click="getExVal('WeekTwoDayOne')"  class="btn btn-active" role="button" >Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[6],'success':dailyFlag[6]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[6]"  ng-click="getExVal('WeekTwoDayTwo')"   class="btn btn-active" role="button">Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[7],'success':dailyFlag[7]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[7]"  ng-click="getExVal('WeekTwoDayThree')"   class="btn btn-active" role="button">Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[8],'success':dailyFlag[8]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[8]"  ng-click="getExVal('WeekTwoDayFour')"   class="btn btn-active" role="button">Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[9],'success':dailyFlag[9]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[9]"  ng-click="getExVal('WeekTwoDayFive')"   class="btn btn-active" role="button">Track It</button></span></div></td>
+
+</tr>
+
+
+<tr id="rows" class="w3-hover-blue"  >
+<td id="routineHead">Week 3</td>
+	<td id="routineTD"  ng-class="{'active':!dailyFlag[10],'success':dailyFlag[10]}"><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekThreeDayOne' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+	
+		<td  id="routineTD" ng-class="{'active':!dailyFlag[11],'success':dailyFlag[11]}" ><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekThreeDayTwo' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+			<td  id="routineTD" ng-class="{'active':!dailyFlag[12],'success':dailyFlag[12]}" ><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekThreeDayThree' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+			<td   id="routineTD" ng-class="{'active':!dailyFlag[13],'success':dailyFlag[13]}"><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekThreeDayFour' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+			<td  id="routineTD" ng-class="{'active':!dailyFlag[14],'success':dailyFlag[14]}" ><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekThreeDayFive' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+		<!-- 			<td style="white-space:nowrap;"><output>&nbsp; REST DAY </output></td>
+			<td style="white-space:nowrap;"><output>&nbsp; REST DAY </output></td>  -->
+</tr>
+
+<tr>
+<td id="routineHead"></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[10],'success':dailyFlag[10]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[10]"  ng-click="getExVal('WeekThreeDayOne')"  class="btn btn-active" role="button" >Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[11],'success':dailyFlag[11]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[11]"   ng-click="getExVal('WeekThreeDayTwo')"  class="btn btn-active" role="button">Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[12],'success':dailyFlag[12]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[12]"   ng-click="getExVal('WeekThreeDayThree')"   class="btn btn-active" role="button">Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[13],'success':dailyFlag[13]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[13]"   ng-click="getExVal('WeekThreeDayFour')"   class="btn btn-active" role="button">Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[14],'success':dailyFlag[14]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[14]"   ng-click="getExVal('WeekThreeDayFive')"   class="btn btn-active" role="button">Track It</button></span></div></td>
+
+</tr>
+
+
+<tr id="rows" class="w3-hover-blue"  >
+<td id="routineHead">Week 4</td>
+	<td   id="routineTD" ng-class="{'active':!dailyFlag[15],'success':dailyFlag[15]}"><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekFourDayOne' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+	
+		<td  id="routineTD" ng-class="{'active':!dailyFlag[16],'success':dailyFlag[16]}" ><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekFourDayTwo' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+			<td  id="routineTD" ng-class="{'active':!dailyFlag[17],'success':dailyFlag[17]}" ><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekFourDayThree' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+			<td  id="routineTD" ng-class="{'active':!dailyFlag[18],'success':dailyFlag[18]}" ><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekFourDayFour' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+<td  id="routineTD" ng-class="{'active':!dailyFlag[19],'success':dailyFlag[19]}" ><ul>
+  <li ng-repeat="x in records | filter: {'dayNo' : 'WeekFourDayFive' }">
+    <output id="outs" type="text"  ng-bind="x.ex_name + ' ' + x.numberOfSets + ' X ' + x.numberOfReps ">
+  </li>
+</ul>
+
+	</td>
+	
+		<!-- 			<td style="white-space:nowrap;"><output>&nbsp; REST DAY </output></td>
+			<td style="white-space:nowrap;"><output>&nbsp; REST DAY </output></td>  -->
+</tr>
+
+<tr>
+<td id="routineHead"></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[15],'success':dailyFlag[15]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[15]"  ng-click="getExVal('WeekFourDayOne')"  class="btn btn-active" role="button" >Track It</button></span></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[16],'success':dailyFlag[16]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[16]"  ng-click="getExVal('WeekFourDayTwo')"  class="btn btn-active" role="button">Track It</a></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[17],'success':dailyFlag[17]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[17]"   ng-click="getExVal('WeekFourDayThree')"  class="btn btn-active" role="button">Track It</a></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[18],'success':dailyFlag[18]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[18]"   ng-click="getExVal('WeekFourDayFour')"   class="btn btn-active" role="button">Track It</a></div></td>
+<td  id="routineTD2" ng-class="{'active':!dailyFlag[19],'success':dailyFlag[19]}"><div style="text-align: center;"><span><button  ng-disabled="!dailyFlag[19]"   ng-click="getExVal('WeekFourDayFive')"   class="btn btn-active" role="button">Track It</a></div></td>
+
+</tr>
+
+ 
+
+</table>
+<br>
+</div>
+
+<table id="buttonTable"  class='table borderless' align="center">
+<tr>
+<td></td><td></td>
+<td>
+<div ><span>
+<button ng-click="downloadPDF()" class="btn btn-success" role="button"> Download as PDF </button></div>
+</td>
+<td>
+<div ><span>&nbsp;<a href="#/weeklyProgress/" class="btn btn-success" role="button"> Weekly Progress </a>
+</div></td>
+<td>
+<div ><span>&nbsp;<button ng-click="delRoutine()" class="btn btn-success" role="button"> Delete Routine </button>
+</div></td>
+</tr>
+</table>
+
+</div>
+
+
+

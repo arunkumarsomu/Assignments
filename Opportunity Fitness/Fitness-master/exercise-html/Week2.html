@@ -1,0 +1,45 @@
+<div ng-controller="weeklyProgCtrl"> 
+<a href="#/weeklyProgress/" class="btn btn-success" role="button">Back main Progress</a>
+  <br>
+  <h1 align="center">Week 2 Progress</h1>
+  <br><br>
+ 
+
+ <a ng-init="getData()"></a>
+ 
+<div style="float:left; width:46%"  align="left">
+ 
+   <div fusioncharts
+      width="600"
+      height="400"
+      type="column3d"
+      datasource="{{myDataSource1}}" >
+ </div>
+ <br><br><br>
+ 
+    <div fusioncharts
+      width="600"
+      height="400"
+      type="pie3d"
+      datasource="{{calDataSource1}}" >
+ </div>
+ 
+ </div> 
+ 
+ <div  style="float:left; width:8%">
+<p>  </p>
+</div>
+ 
+ <div style="float:left; width:46%"  align="left">
+  <div fusioncharts
+      width="600"
+      height="400"
+      type="mscolumn3d"
+      datasource="{{foodDataSource1}}" >
+ </div>
+ 
+ 
+  </div> 
+  
+
+</div>

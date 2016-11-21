@@ -1,0 +1,147 @@
+<div ng-controller="oneDayFoodCtrl" > 
+
+<div style="float:left; width:40%"  align="left">
+  <h1 align="left">Workouts for today</h1>
+
+  <div>
+  
+   <table id="workoutRoutine" class="table table-bordered table-hover " align="center" >
+  <tr  align="center">
+	<th id="week">Exercise</th>
+    <th id="day1">No of Sets</th>
+    <th id="day2">No of Reps</th>
+	<th id="day3">Completed </th>
+	<th > Edit </th>
+	<th> Delete </th>
+  </tr>
+ 
+<tr id="rows"  ng-repeat="x in exercises " >
+<td> <output type="text"   ng-bind="x.ex_name"></td>
+<td> <input type="text" maxlength="4" size="4" ng-disabled="disable"  ng-model="x.numberOfSets"></td>
+<td> <input type="text" maxlength="4" size="4" ng-disabled="disable"  ng-model="x.numberOfReps"></td>
+<td> 
+<span> No <input id="complete-no"  type="radio" name="{{x.ex_name}}" ng-value="false"  ng-model="x.complete" ng-click="getPercent()" /></span>
+<br>
+<span> Yes <input id="complete-yes" type="radio" name="{{x.ex_name}}" ng-value="true" ng-model="x.complete"  ng-click="getPercent()" /></span>
+</td>
+<td>
+<button><span class="glyphicon glyphicon-pencil" ng-click="disable=false"></span>
+</td>
+<td>
+<button><span class="glyphicon glyphicon-trash" ng-click="delCall(x)"></span>
+</td>
+</tr>
+<!--tr><td><td><td> <input ng-click="getRowVal()" type="button" value="Submit"> <td -->
+</table>
+</div>
+
+<div>
+  <h2>Progress </h2>
+  <div class="progress">
+    <div color='green' width="50px" class="progress-bar" role="progressbar" aria-valuenow="{{percent}}" aria-valuemin="0" aria-valuemax="50" style="{{width}}">{{percentVal}}</div>
+  </div>	
+</div>
+
+<div>
+<span><button   ng-click="showExList()"  class="btn btn-active" role="button" >Add more exercise</button></span></td>
+<select ng-show="selectFlag" ng-model="selectedEx"  ng-options="x for x in exNames">
+<option value="" selected="selected">Choose Exercise to add</option>
+</select>
+<span ng-show="selectedEx"><button   ng-click="addExToList(selectedEx)"  class="w3-btn w3-light-blue w3-padding-4" role="button" >Add this to List</button></span></td>
+</div>
+<br>
+
+<button class="btn btn-active" ng-click="addFoodDay()"> 
+			Save my progress!</button>
+<br>
+<br>			
+			
+ <a href="#/exerciseTracking/" class="btn btn-success" role="button">Back to Routine</a>
+</div>
+
+<div  style="float:left; width:6%">
+<p>  </p>
+</div>
+
+<div  style="float:left; width:54%"> 
+
+	<div>
+		<h1 align="center">Food Tracking</h1>
+	</div>
+	<div style="float:left; width:70%">
+		<input 	ng-model="ctrl.id" 
+				class="form-control" 
+				type="text" 
+				placeholder="Filter food by name">
+		
+		<p />
+		
+		<div>
+		<!--ul><input type="radio" name="food" ng-model="selectedMeal" value="" > ALL FOODS</ul>
+		< select ng-options="x for cat in foodcategorylist"-->
+		<select ng-model="selectedCategory" ng-options="x.client_id for x in foodOptions">
+			<option name="food" selected="selected" value="" > Choose food category </option>
+		</select>
+		<button ng-click="filter(selectedCategory)"> Filter! </button>
+		
+			<table class="table table-bordered table-hover">
+				<thead>
+					<tr>
+					  <th>Description</th>
+					  <th>Calories</th>
+					  <th>Protein</th>
+					  <th>Fat</th>
+					  <th>Carbs</th>
+					</tr>
+				</thead>
+				<tbody ng-repeat="list in fullfoodlist | filter:{client_id: selectedMeal} | filter:{description: ctrl.id}">
+					<tr>
+					  <td ng-bind="list.description"></td>
+					  <td>{{list.calories}}</td>
+					  <td>{{list.protein}}</td>
+					  <td>{{list.fat}}</td>
+					  <td>{{list.carbs}}</td>
+					</tr>
+				</tbody>
+			</table>
+	
+	</div>
+	
+	</div>
+	<div  style="float:left; width:5%">
+		<p>  </p>
+		<p>  </p>
+	</div>	
+	<div style="float:right; width:25%">
+
+			
+		<button class="btn btn-info" ng-click="showSelected()"> 
+			List Selected Food</button>
+				
+		<p />
+		<table class="table table-bordered table-hover">
+			<thead>
+					<tr>
+					  <th width="90%">Food Selected</th>
+					  <th width="10%">Calories</th>
+					</tr>
+				</thead>
+				<tbody ng-repeat="picked in selected">
+					<tr>
+						<td ng-bind="picked.description"></td>
+						<td>{{picked.calories}}</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td width="90%">Total</td>
+						<td width="10%">{{total}}</td>
+					</tr>
+				</tbody>
+		</table>
+	
+		
+	</div>
+</div>
+
+</div>

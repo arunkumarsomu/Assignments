@@ -1,0 +1,109 @@
+<div ng-controller="foodTrackerCtrl as ctrl" style="width:100%;"> 
+
+<div >
+  <h1 align="center">Food Tracking</h1>
+ </div>
+ 
+
+
+	<div style="float:left; width:40%">
+
+	  
+		<input 	ng-model="ctrl.id" 
+				class="form-control" 
+				type="text" 
+				placeholder="Filter food by name">
+		
+		<p />
+			<br>
+		<!--ul><input type="radio" checked="checked" name="food" ng-model="selectedMeal" value=""> ALL FOODS</ul>
+		<ul ng-repeat="cat in foodcategorylist">
+			<input id="catfilter" type="radio" name="food" ng-model="$parent.selectedMeal" value="{{cat.id}}"> {{cat.client_id}}
+		</ul-->
+		<select ng-model="selectedCategory" ng-options="x.client_id for x in foodOptions">
+			<option name="food" selected="selected" value="" > Choose food category </option>
+		</select>
+		<button ng-click="filter(selectedCategory)"> Filter! </button>
+		<p />
+		
+		
+		<p />
+		
+	
+	
+	
+	<br>
+			<table class="table table-bordered table-hover">
+				<thead>
+					<tr>
+					  <th id="routineHead">Select </th>
+					  <th id="routineHead">Description</th>
+					  <th id="routineHead">Calories</th>
+					  <th id="routineHead">Protein</th>
+					  <th id="routineHead">Fat</th>
+					  <th id="routineHead">Carbs</th>
+					</tr>
+				</thead>
+				<tbody ng-repeat="list in fullfoodlist | filter:{client_id: selectedMeal} | filter:{description: ctrl.id}">
+					<tr>
+						<td bgcolor="white" > <input type="checkbox" ng-model="list.selected" name="selectedMeals[]" value="{{list.id}}"> </td>
+						<td bgcolor="white" ng-bind="list.description"></td>
+						<td bgcolor="white" >{{list.calories}}</td>
+						<td bgcolor="white" >{{list.protein}}</td>
+						<td bgcolor="white" >{{list.fat}}</td>
+						<td bgcolor="white" >{{list.carbs}}</td>
+					</tr>
+				</tbody>
+			</table>
+	
+	</div>
+	<div style="float:left; width:20%;">
+	<p />
+	<br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+			<button class="btn btn-success" ng-click="showSelected()"> 
+			Update Food Calculator</button>
+			<br><br>
+		
+		
+		
+			
+	
+	</div>
+	<div style="float:left; width:40%;">
+	<div align="right">
+	
+
+	<p />
+	</div>
+	
+  <!--div><span><br></span></div-->
+  	 <span align="left"><a  href="#/exerciseTracking/" class="btn btn-success" role="button">Back to Routine</a><span>
+	  <br><br><br><br><br>
+		<table class="table table-bordered table-hover">
+			<thead>
+					<tr>
+					  <th  id="routineHead">Food Selected</th>
+					  <th  id="routineHead">Calories</th>
+					</tr>
+				</thead>
+				<tbody ng-repeat="picked in selected">
+					<tr>
+						<td bgcolor="white" ng-bind="picked.description"></td>
+						<td bgcolor="white" >{{picked.calories}}</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td bgcolor="white" >Total</td>
+						<td bgcolor="white" >{{total}}</td>
+					</tr>
+				</tbody>
+		</table>
+	</div>
+	<button class="btn btn-success" ng-click="addFoodDay()"> 
+			Save my progress!</button>
+	<br>
+	
+	 
+</div>

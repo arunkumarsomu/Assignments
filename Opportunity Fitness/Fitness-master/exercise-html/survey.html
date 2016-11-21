@@ -1,0 +1,86 @@
+<div id="surveyPage" ng-controller="surveyCtrl">
+		<h1>Survey</h1>
+<br><br>
+	<div class="form-group" align="center">
+		<form name="myForm2">
+		<label>Height (inches):</label>
+
+		
+		<input 	style="width:500px" class="form-control" 
+				type="number" name="height" 
+				ng-model="height" placeholder="Height"
+				min=0 max=96 required />		
+		<span ng-show = "myForm2.height.$error.min">Height must be greater than 0 inches</span>
+        <span ng-show = "myForm2.height.$touched && myForm2.height.$error.required"> Height required</span>
+		<span ng-show = "myForm2.height.$error.max">Are you sure, you are more than 8 foot?</span>
+		</form>
+	</div>
+
+	<div class="form-group" align="center">
+	<form name="myForm1">
+		<label>Weight (lbs):</label>
+
+		<input style="width:500px;" class="form-control memberWeight" type="number" 
+		id="memberWeight" name="weight" ng-model="ctrl.user.memberWeight" required  
+		placeholder="Weight" min=0 max=1000/>
+
+		<span ng-show="myForm1.weight.$touched && myForm1.weight.$error.required">Weight is required</span>
+		 
+		<span ng-show="myForm1.weight.$error.min">Weight must greater than 0 lbs</span>
+		<span ng-show="myForm1.weight.$error.max">No offense, but are you sure your scale is working?</span>
+	</form>
+	</div>
+
+
+	<div class="form-group" align="center">
+	<form name="myForm3">
+		<label for="memberAge">Age (years):</label>
+
+		<input style="width:500px" class="form-control memberAge" type="number" id="memberAge" 
+		name="age" ng-model="age" required  
+		placeholder="Age" min=0 max=100/>
+
+		<span ng-show="myForm3.age.$touched && myForm3.age.$error.required">Age is required</span>
+		 
+		<span ng-show="myForm3.age.$error.min">Age must be greater than 0 years</span>
+		<span ng-show="myForm3.age.$error.max">Proud of you!!! Older than 100 and still working out</span>
+	</form>
+	</div>
+<br>
+	<div class="form-group">
+
+	<label for="gender">Gender:</label>
+
+				   <select name="gender">
+					  <option value="genderEmpty"></option>
+					  <option value="Female">Female</option>
+					  <option value="Male">Male</option>
+
+					</select>
+
+	<label for="goal"> Goal:</label>
+
+				   <select name="goal" ng-model="intensity">
+					  <option value="1" selected>New to working out</option>
+					  <option value="2">Familiar with working out</option>
+					  <option value="3">Expert</option>
+					  
+
+					</select>
+				
+		
+	</div>
+
+	<!--div class="form-group">
+
+	<label>Comments:</label>
+
+	<input class="form-control goal" type="text" id="goal" name="goal"  placeholder="Optional" />
+			
+	</div-->
+	<br><br>
+	<span us-spinner="{radius:30, width:8, length: 16}"></span>
+	<button type="submit" class="btn btn-success" ng-click="getRoutine(+intensity)">Submit</button>
+	 <a href="#/exerciseTracking/" ng-show="surveyDone" class="btn btn-success" role="button">Proceed</a>
+	</form>
+</div>

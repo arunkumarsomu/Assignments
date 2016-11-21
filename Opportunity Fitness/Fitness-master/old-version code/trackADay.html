@@ -1,0 +1,45 @@
+<div ng-controller="oneDayCtrl" style="width:50%; align:left-side;"> 
+
+  <h1 align="center">Workouts for today</h1>
+
+  <div>
+  
+   <table id="workoutRoutine" class="w3-table-all " align="center" >
+  <tr  align="right-side">
+	<th id="week">Exercise</th>
+    <th id="day1">No of Sets</th>
+    <th id="day2">No of Reps</th>
+	<th id="day3">Completed ? </th>
+  </tr>
+ 
+<tr id="rows" class="w3-hover-blue" ng-repeat="x in exercises " >
+<td> <output type="text"  ng-bind="x.ex_name"></td>
+<td> <output type="text"  ng-bind="x.numberOfSets"></td>
+<td> <output type="text"  ng-bind="x.numberOfReps"></td>
+<td> 
+<span> No <input id="complete-no"  type="radio" name="{{x.ex_name}}" ng-value="false"  ng-model="x.complete" ng-click="getPercent()" /></span>
+<br>
+<span> Yes <input id="complete-yes" type="radio" name="{{x.ex_name}}" ng-value="true" ng-model="x.complete"  ng-click="getPercent()" /></span>
+</td>
+</tr>
+<tr><td><td><td> <input ng-click="getRowVal()" type="button" value="Submit"> <td>
+</table>
+</div>
+
+<div>
+  <h2>Progress </h2>
+  <div class="progress">
+    <div width="50px" class="progress-bar" role="progressbar" aria-valuenow="{{percent}}" aria-valuemin="0" aria-valuemax="50" style="{{width}}">{{percentVal}}</div>
+  </div>	
+</div>
+
+<div>
+<span><button   ng-click="showExList()"  class="w3-btn w3-light-blue w3-padding-4" role="button" >Click to add more</button></span></td>
+<select ng-show="selectFlag" ng-model="selectedEx"  ng-options="x for x in exNames">
+<option value="" selected="selected">Choose Exercise to add</option>
+</select>
+<span ng-show="selectedEx"><button   ng-click="addExToList(selectedEx)"  class="w3-btn w3-light-blue w3-padding-4" role="button" >Add this to List</button></span></td>
+</div>
+<br>
+ <a href="#/exerciseTracking/" class="w3-btn w3-blue w3-padding-8" role="button">Back to Routine</a>
+</div>

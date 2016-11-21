@@ -1,0 +1,66 @@
+<div ng-controller="oneDayFoodCtrl" > 
+
+<div style="float:left; width:100%"  align="left">
+  <h1 align="center">Workouts for today</h1>
+
+  <div>
+  
+   <table id="workoutRoutine" class="table table-bordered table-hover " align="center" >
+  <tr  align="center">
+	<th id="routineHead" >Exercise</th>
+    <th id="routineHead" >No of Sets</th>
+    <th id="routineHead" >No of Reps</th>
+	<th id="routineHead" >Completed </th>
+	<th id="routineHead" > Edit </th>
+	<th id="routineHead" > Delete </th>
+  </tr>
+ 
+<tr id="rows"  ng-repeat="x in exercises " >
+<td bgcolor="white" align="center"> <output id="outs" type="text"   ng-bind="x.ex_name"></td>
+<td bgcolor="white" align="center"> <input style="text-align:center;" id=" type="text" maxlength="4" size="2" ng-disabled="disable"  ng-model="x.numberOfSets"></td>
+<td bgcolor="white" align="center"> <input style="text-align:center;" type="text" maxlength="4" size="2" ng-disabled="disable"  ng-model="x.numberOfReps"></td>
+<td bgcolor="white" align="center"> 
+<!--span> No <input id="complete-no"  type="radio" name="{{x.ex_name}}" ng-value="false"  ng-model="x.complete" ng-click="getPercent()" /></span>
+<span> Yes <input id="complete-yes" type="radio" name="{{x.ex_name}}" ng-value="true" ng-model="x.complete"  ng-click="getPercent()" /></span-->
+<span >
+<input id="c1" type="checkbox" ng-model="x.complete" ng-click="getPercent()"></span>
+</td>
+<td bgcolor="white" align="center">
+<button><span  class="glyphicon glyphicon-pencil" ng-click="disable=false"></span>
+</td>
+<td  bgcolor="white" align="center">
+<button><span  class="glyphicon glyphicon-trash" ng-click="delCall(x)"></span>
+</td>
+</tr>
+<!--tr><td><td><td> <input ng-click="getRowVal()" type="button" value="Submit"> <td -->
+</table>
+</div>
+
+<div>
+  <h2>Progress </h2>
+  <div class="progress progress-bar-default">
+    <div  class="progress-bar progress-bar-warning" width="50px" class="progress-bar" role="progressbar" aria-valuenow="{{percent}}" aria-valuemin="0" aria-valuemax="50" style="{{width}}">{{percentVal}}</div>
+  </div>	
+</div>
+
+<div>
+<span><button   ng-click="showExList()"  class="btn btn-success" role="button" >Add more exercise</button></span></td>
+<select ng-show="selectFlag" ng-model="selectedEx"  ng-options="x for x in exNames">
+<option value="" selected="selected">Choose Exercise to add</option>
+</select>
+<span ng-show="selectedEx"><button   ng-click="addExToList(selectedEx)"  class="btn btn-success" role="button" >Add this to List</button></span></td>
+</div>
+<br>
+
+<button class="btn btn-success" ng-click="getRowVal()"> 
+			Save my progress!</button>
+<a href="#/foodTracking/" class="btn btn-success" role="button">Track Food</a>
+ <a href="#/exerciseTracking/" class="btn btn-success" role="button">Back to Routine</a>
+<br>
+<br>				
+
+</div>
+
+
+
+</div>

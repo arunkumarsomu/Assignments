@@ -1,0 +1,47 @@
+<!--link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"-->
+
+<div ng-controller="foodCtrl as ctrl"> 
+
+  <h1 align="center">Browse Food</h1>
+  
+	<div>
+		<input 	ng-model="ctrl.id" 
+				class="form-control" 
+				type="text" 
+				placeholder="Filter food by name">
+		
+		<p />
+	</div>
+	
+	
+	<div>
+		<!--ul><input type="radio" name="food" ng-model="selectedMeal" value="" > ALL FOODS</ul>
+		< select ng-options="x for cat in foodcategorylist"-->
+		<select ng-model="selectedCategory" ng-options="x.client_id for x in foodOptions">
+			<option name="food" selected="selected" value="" > Choose food category </option>
+		</select>
+		<button ng-click="filter(selectedCategory)"> Filter! </button>
+		<!-- class="table table-bordered table-hover" --> 
+			<table  class= "table table-bordered table-hover" >
+				<thead>
+					<tr>
+					  <th id="routineHead2">Description</th>
+					  <th id="routineHead2">Calories</th>
+					  <th id="routineHead2">Protein</th>
+					  <th id="routineHead2">Fat</th>
+					  <th id="routineHead2">Carbs</th>
+					</tr>
+				</thead>
+				<tbody ng-repeat="list in fullfoodlist | filter:{client_id: selectedMeal} | filter:{description: ctrl.id}">
+					<tr>
+					  <td  bgcolor="white" style="text-align:left;" ng-bind="list.description"></td>
+					  <td   bgcolor="white" style="text-align:left;">{{list.calories}}</td>
+					  <td   bgcolor="white" style="text-align:left;">{{list.protein}}</td>
+					  <td  bgcolor="white"  style="text-align:left;">{{list.fat}}</td>
+					  <td  bgcolor="white"  style="text-align:left;">{{list.carbs}}</td>
+					</tr>
+				</tbody>
+			</table>
+	
+	</div>
+</div>

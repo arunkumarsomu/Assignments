@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Opportunity Fitness</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--Favicon -->
+	<link rel="icon" type="image/png" href="images/favicon.jpg" />
+		
+	<!-- CSS Files -->
+			
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/animate.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/player/YTPlayer.css" />
+	<link rel="stylesheet" href="css/popUp.css" />
+	<link href="css/pro-bars.css" rel="stylesheet" />
+	
+	
+	<!-- End CSS Files -->
+	
+	<script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script> 
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+ 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" type="text/javascript"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://fgnass.github.io/spin.js/spin.min.js"></script>
+ <script src="/exercise-js/angular-spinner.min.js" type="text/javascript"></script>
+<script src="/exercise-js/angular-loading-spinner.js" type="text/javascript"></script>
+
+
+<script src="/plugin-js/angular-youtube-embed.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="/plugin-js/html2canvas.js" type="text/javascript"></script>
+<script src="/plugin-js/pdfmake.min.js" type="text/javascript"></script>
+<script src="/plugin-js/vfs_fonts.js" type="text/javascript"></script>
+
+
+<script src="mainScript.js" type="text/javascript"></script>
+<script src="/exercise-js/oneDayAndFoodTrack.js" type="text/javascript"></script>
+<script src="/exercise-js/createUser.js" type="text/javascript"></script>
+<script src="/exercise-js/exerciseCategories.js" type="text/javascript"></script>
+<script src="/exercise-js/exercises.js" type="text/javascript"></script>
+<script src="/exercise-js/loginUser.js" type="text/javascript"></script>
+<script src="/exercise-js/routineDisplay.js" type="text/javascript"></script>
+<script src="/exercise-js/survey.js" type="text/javascript"></script>
+<script src="/exercise-js/weeklyProgress.js" type="text/javascript"></script>
+<script src="/food-js/food.js" type="text/javascript"></script>
+<script src="/food-js/myScript_foodTracker.js" type="text/javascript"></script>
+<script src="popUp.js" type="text/javascript"></script>
+
+<script src="/plugin-js/js-date-format.js" type="text/javascript"></script>
+<script src="/plugin-js/fusioncharts.js" type="text/javascript"></script>
+<script src="/plugin-js/angular-fusioncharts.min.js" type="text/javascript"></script>
+ 
+</head>
+
+<body ng-controller="mainCtrl as ctrl">
+
+	<!-- Navigation -->
+	<section id="navigation" class="dark-nav">
+		<!-- Navigation Inner -->
+		<div class="nav-inner">
+			<!-- Site Logo -->
+			<div class="site-logo fancy">
+				<a href="#" id="logo-text" class="scroll logo">Opportunity Fitness
+				</a>
+			</div><!-- End Site Logo -->
+			<a class="mini-nav-button gray2"><i class="fa fa-bars"></i></a>
+			<!-- Navigation Menu -->
+		    <div class="nav-menu">
+				<ul class="nav uppercase">
+					<li><a href="#home" class="scroll">Home</a></li>       
+					<li><a href="#about" class="scroll">About us</a></li>
+					<li><a href="#features" class="scroll">Features</a></li>  
+					<!--li><a href="/addUser.html#/addUser">Create User</a></li-->					
+					<li ng-show="!loggedInFlag"><a href="/secondPage.html#/addUser">Create User</a></li>	
+					
+					<li ng-show="!loggedInFlag"><a href="#login" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+					<!--li ng-show="!loggedInFlag"><a href="/secondPage.html#/login" >Login</a></li-->
+					<li ng-show="loggedInFlag"><span style='color:lightgrey;'> Welcome!!! {{userName}}!!!</span></li>
+					<li ng-show="loggedInFlag" ng-click="logout()"><a href="{{hrefval}}">Logout</a></li>
+					
+				</ul>
+		  </div><!-- End Navigation Menu -->
+		</div><!-- End Navigation Inner -->
+	</section><!-- End Navigation Section -->
+
+<!-- Login section -->
+	<section id="login" class="relative container" style="position:relative;z-index:999">
+		
+			<div id="id01" class="modal">
+			<form id="myForm" class="modal-content animate" ng-submit="loginUser()">
+				<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<img src="icon-user-default.png" alt="Avatar" class="avatar">
+				</div>
+
+				<div class="container">
+					<label><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="UserId" ng-model="userId"  required></input>
+						
+					<label><b>Password</b></label>
+					<input type="password" placeholder="Enter Password"  name="PassWord" ng-model="passWord" required></input>
+				
+					<button class="loginbtn" type="submit">Login</button>
+					
+				</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+			  <button ng-show="!loggedInFlag" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				<!--button  ng-show="loginFlag" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">OK</button-->
+				<span ng-show='loginFlag'>{{loginResult}}</span>
+				<button ng-show="!loggedInFlag && loginFlag" type="button" class="okbtn"><a href="#login" onclick="document.getElementById('myForm').reset();">Try again</a></button>
+				<span ng-show="!loggedInFlag && loginFlag"> OR </span>
+				<button ng-show="!loggedInFlag && loginFlag" type="button" class="okbtn"><a href="/secondPage.html#/addUser/">New User</a></button>
+				<button ng-show="loggedInFlag && !surveyDone" type="button" class="okbtn"><a href="/secondPage.html#/survey/">Click Here</a></button>
+				<button ng-show="loggedInFlag && surveyDone" type="button" class="okbtn"><a href="/secondPage.html#/exerciseTracking/">Click Here</a></button>
+				<!--a href="/secondPage.html#/survey/" ng-show="loggedInFlag && !surveyDone" class="btn btn-info" role="button">Survey Page</a>
+				<a href="/secondPage.html#/exerciseTracking/" ng-show="loggedInFlag && surveyDone" class="btn btn-info" role="button">Routine Page</a-->
+ 
+				
+			</div>
+		  </form>
+		</div>
+
+	
+	</section>
+	
+	
+	<!-- Home Section -->
+	<section id="home" class="relative"> 	
+		<div id="slides">
+			<div class="slides-container relative">
+				<!-- Slider Images -->
+				<div class="image2"></div>
+                <div class="image1"></div>
+				<div class="image3"></div>
+                <div class="image4"></div>
+				 <!-- End Slider Images -->	 
+			</div>
+			<!-- Slider Controls -->
+			<nav class="slides-navigation">
+			  <a href="#" class="next"></a>
+			  <a href="#" class="prev"></a>
+			</nav>
+		</div><!-- End Home Slides -->
+		<div class="v2 absolute">
+			<!-- Auto Typocraphic Texts -->
+			<div class="typographic">
+            	<!-- Your Logo -->
+				<div class="logo">
+					<img src="images/logo-icon.png" width="200" alt="Logo" />
+				</div>
+				<!--h2 class=" condensed uppercase no-padding no-margin bold black">Introducing</h2-->
+				<h1 class=" condensed uppercase no-padding no-margin bold yellow">Opportunity Fitness</h1>
+				<a href="#about" class="scroll"><i class="arrow-down fa fa-3x fa-angle-double-down"></i></a>
+			</div><!--End Auto Typocraphic Texts -->
+		</div><!-- End V2 area -->
+	</section><!-- End Home Section -->
+
+    
+    
+    <!-- About -->
+	<section id="about" class="container waypoint">
+		<div class="inner">        
+        
+			<!-- Header -->
+			<h1 class="header light gray3 fancy">About  <span class="colored">US </span></h1>
+
+			<!-- Description -->
+			<p class="h-desc gray4">Following are the <span class="colored bold"> coolest people</span> who created this fun fitness app.
+			All of us share an interest in fitness 
+           and nutrition so we created a fitness app  to track of our workout routines and progress.
+			<br /><br /></p> 
+			<hr>       
+				
+		
+		
+			<!-- Boxes -->
+			<div class="boxes">
+
+				
+				<!--div class="col-xs-3 col-sm-6 col-md-3 about-box animated" data-animation="fadeIn" data-animation-delay="100"-->
+				<p class="lead">Team members</p>
+				<hr><br>
+						<div style="float:left;width:25%;">
+							<img src="images/Arun.jpg" style="width:150px;height150px;border-radius:100%;">
+							<br><br>
+							<p class="light about-text">Arun's favorite activity is drinking water.  It keeps you active.</p>
+						</div>
+						<div style="float:left;width:25%;">
+							<img src="images/Mike.jpg" style="width:150px;height150px;border-radius:100%;">
+							<br><br>
+							<p class="light about-text">Mike plays soccer.</p>
+						</div>
+						<div style="float:left;width:25%;">
+							<img src="images/Karen.jpg" style="width:150px;height150px;border-radius:100%;">
+							<br><br>
+							<p class="light about-text">Karen's favoriate activity is yoga.</p>
+						</div>
+						<div style="float:left;width:25%;">
+							<img src="images/Kevin.jpg" style="width:150px;height150px;border-radius:100%;">
+							<br><br>
+							<p class="light about-text">Kevin plays volleyball.</p>
+						</div>
+				</div>
+
+				
+				<!--div class="col-xs-3 col-sm-6 col-md-3 about-box animated" data-animation="fadeIn" data-animation-delay="300">
+				<p class="lead">More about us</p>
+				<hr><br>
+					<a class="about-icon">
+						<i class="fa fa-wheelchair"></i>
+					</a>
+					<br><br>
+					<p class="light about-text">Coming up soon things about us and some pics.</p>
+				</div-->
+
+			</div><!-- End Boxes -->
+		</div><!-- End About Inner -->
+	</section><!-- End About Section -->
+
+	<!-- Features -->
+	<section id="features" class="container">
+
+		<div class="inner">
+
+			<!-- Header -->
+			<h1 class="header light gray1">Features of <span class="colored fancy">Opportunity Fitness!</span></h1>
+
+			<!-- Description -->
+			<p class="h-desc white bold">
+			Our web application features <em style="color:yellow">48 Java classes </em> and <em style="color:yellow">38 API calls </em> that handles between the back end and front end.
+			All of our data is stored in <em style="color:yellow">8 mySQL tables </em> and is updated with each user's actions.  We developed <em style="color:yellow">15 custom Javascript files </em> 
+			(not including plugins and add-ons) to create the front end.
+			We utilized <em style="color:yellow">JQuery, AJAX, and Angular </em> to develop the interactive features shown on this page.  All of our pages were styled with <em style="color:yellow">HTML and CSS</em>.
+			
+			<br>
+			<br>
+			Whether you are planning to register with us or just browsing through fitness sites, we got something for you. Check out our cool features below!!!
+			</p>
+
+			<div class="features-boxes">
+
+				<!-- Box 1 -->
+				<div class="col-xs-4 f-box animated" data-animation="fadeIn" data-animation-delay="0">
+					<!-- Icon
+					<a href="#/food" class=" scroll f-icon" >  -->
+					<a href="/secondPage.html#/food" class="f-icon" >
+						<i class="fa fa-cutlery"></i>
+					</a>
+					<!-- Header -->
+					<p class="feature-head">Food </p>
+					<!-- Text -->
+					<p class="feature-text ">Browse through our Food database to find nutrition information and make healthy choices.</p>
+				</div>
+
+
+				<!-- Box 2 -->
+				<div class="col-xs-4 f-box animated" data-animation="fadeIn" data-animation-delay="100">
+					<!-- Icon  
+					<a href="#/exerciseCategories" class="scroll f-icon" >  -->
+					<a href="/secondPage.html#/exerciseCategories" class="f-icon" >
+							<i class="fa fa-male"></i>
+					</a>
+					<!-- Header -->
+					<p class="feature-head">Exercise</p>
+					<!-- Text -->
+					<p class="feature-text ">Browse our exercise database and find workouts for each body part and a how to do video explanation.</p>
+				</div>
+
+
+				<!-- Box 3 -->
+				<div class="col-xs-4 f-box animated" data-animation="fadeIn" data-animation-delay="200">
+					<!-- Icon -->
+					<a ng-show="loggedInFlag" href="/secondPage.html#/exerciseTracking"  class="f-icon">
+						<i class="fa fa-pencil"></i>
+					</a>
+					<!--a ng-show="!loggedInFlag" href="/secondPage.html#/login"  class="f-icon">
+						<i class="fa fa-pencil"></i>
+					</a-->
+					<a ng-show="!loggedInFlag" href="#login" onclick="document.getElementById('id01').style.display='block'" class="f-icon">
+						<i class="fa fa-pencil"></i>
+					</a>
+					
+										
+					<!-- Header -->
+					<p class="feature-head">Track'em</p>
+					<!-- Text -->
+					<p class="feature-text light">Track your workout and food consumtion here to stay healthy.</p>
+				</div>
+				<div class="clear"></div>
+
+			</div><!-- End Features Boxes -->
+
+		</div> <!-- End Features Inner -->
+
+	</section><!-- End Features Section -->
+    
+		
+    
+
+    
+	<!-- Contact Section >
+	<section  class="container parallax4">
+		
+		<div id="exerciseCategories">
+		<div id="food">
+			<div id="addUser">
+		<div class="inner contact">
+			 <div id="view" ng-view></div>
+			
+		</div>
+		</div></div></div>
+	</section><!-- End Contact Section -->
+
+	<!-- Blockquote -->
+	<section id="blockquote">
+
+		<div class="inner no-padding">
+			<!-- Your Text -->
+			<p class="normal white blockquote fancy">Back to Top!!! 
+			<a href="#home" class="scroll"><i class="fa fa-arrow-right"></i></a></p>
+		</div>
+
+	</section><!-- End Blockquote Section -->
+
+	<!-- Site Socials and Address -->
+	<section id="site-socials" class="no-padding white-bg">
+		<div class="site-socials inner no-padding">
+			<!-- Socials -->
+			<div class="socials animated" data-animation="fadeInLeft" data-animation-delay="400">
+				<!-- Facebook -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<!-- Twitter -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-twitter"></i>
+				</a>
+				<!-- Instagram -->
+				<a href="#" class="social">
+					<i class="fa fa-instagram"></i>
+				</a>
+				<!-- Linkedin -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-linkedin"></i>
+				</a>
+				<!-- Vimeo -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-vimeo-square"></i>
+				</a>
+				<!-- Youtube -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-youtube"></i>
+				</a>               
+				<!-- Google Plus -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-google-plus"></i>
+				</a>                
+			</div>
+			<!-- Adress, Mail -->
+			<div class="address socials animated" data-animation="fadeInRight" data-animation-delay="500">
+				<!-- Phone Number, Mail -->
+				<p>Phone: +1 (800) OPP-TUNE Email : <a href="mailto:info@OpporTunITyFitness.com" class="colored">info@OpporTunITyFitness.com</a> Address: 6401 Security Blvd, Woodlawn,MD</p>
+				<!-- Top Button -->
+				<a href="#home" class="scroll top-button">
+					<i class="fa fa-arrow-circle-up fa-2x"></i>
+				</a>
+			</div><!-- End Adress, Mail -->
+		</div><!-- End Inner -->
+	</section><!-- End Site Socials and Address -->
+
+
+
+	<!-- Footer -->
+	<footer id="footer" class="footer">
+		<!-- Your Company Name -->
+        <img src="images/logo-icon.png" width="200" alt="Logo" />
+		<!-- Copyright -->
+		<p class="copyright normal">© 2016 <span class="colored">OpportunITy Fitness.</span> All Rights Reserved.</p>
+	</footer><!-- End Footer -->
+
+	<!-- JS Files -->
+	
+	
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.appear.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/modernizr-latest.js"></script>
+	<script type="text/javascript" src="js/SmoothScroll.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.superslides.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="js/jquery.slabtext.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<script>
+
+  $("a.about-icon").hover(function () {
+    $(this).children("i").addClass("fa-spin");
+ }, function(){
+ 	$(this).children("i").removeClass("fa-spin");
+ });
+
+
+
+</body>
+
+</html>

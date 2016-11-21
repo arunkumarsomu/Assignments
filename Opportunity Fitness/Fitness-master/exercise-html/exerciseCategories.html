@@ -1,0 +1,22 @@
+<div ng-controller="catCtrl"> 
+
+  <h1 align="center">Muscle Group Categories</h1>
+
+  <div>
+  <table class="table table-bordered">
+    		<tbody ng-repeat="cat in records" ng-click="setActiveCat(cat.description)">
+					<tr>
+						<td style="height: 30px;"><a href="#/exercise/" ><img src={{cat.url}}  height="80" width="80"></a></td>
+						<td style="text-align:left;"><span>{{cat.explanation}}</span></td>
+					</tr>
+				</tbody>
+				
+    <!--ul ng-repeat="cat in records" ng-click="setActiveCat(cat.description)">
+     <li><a href="#/exercise/" ><img src={{cat.url}}></a>  <span>{{cat.description}}</span>
+	 <span>{{cat.explanation}}</span></li>
+	
+    </ul-->
+	
+	</table>
+</div>
+</div>

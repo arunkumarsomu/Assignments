@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<div ng-controller="mainCtrl"> 
+<div >
+  <h1 align="center">Login Page</h1>
+<form name="myForm" ng-submit="loginUser()">
+<table  class= "w3-table-all w3-card-4" align="center">	
+<br>
+<tr>
+<td>UserID </td>
+<td><input name="UserId" ng-model="userId"  type="text" required  ></td>
+</tr>
+<tr>
+<td>Password </td>
+<td><input name="PassWord" ng-model="passWord"  type="password" required ></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"><input type="submit" value="Submit"> </td>
+ </tr>
+ </table>
+ 
+ <div align="center"><span ng-show="loginFlag">{{loginResult}}</span></div>
+
+	
+</form>
+	<br>
+ <!--a href="#/survey/" ng-show="loginSuccess && !surveyDone" class="btn btn-info" role="button">Survey Page</a>
+ <a href="#/exerciseTracking/" ng-show="loginSuccess && surveyDone" class="btn btn-info" role="button">Routine Page</a-->
+ 
+</div>
+</div>
+
+
+
